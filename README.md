@@ -32,9 +32,13 @@ Suggestion: Use all possible hyper parameter combinations to extract the best ac
 new train and test accuracies.
 
 > - Apply the above steps for all possible models that you have learnt so far.
-> • Display and compare all the models designed with their train and test accuracies.
-> • Select the final best trained model along with your detailed comments for selecting this model.
-> • Pickle the selected model for future use.
-> • Import the future data file. Use the same to perform the prediction using the best chosen model from above. Display the prediction results.
+> - Display and compare all the models designed with their train and test accuracies.
+> - Select the final best trained model along with your detailed comments for selecting this model.
+> - Pickle the selected model for future use.
+> - Import the future data file. Use the same to perform the prediction using the best chosen model from above. Display the prediction results.
 6. Conclusion and improvisation:
-> • Write your conclusion on the results.
+> - PCA was implemented to reduce the features from 478 to 200 that essentially explained 98% of the variance in the data.
+> - In order to balance the samples amongst all class labels, oversampling (via SMOTE) and undersampling (via Random undersampling) was performed.
+> - Combined Oversampling and undersampling was performed via SMOTETomek.
+> - Results concluded that Oversampling via SMOTE gave the best results i.e. 80.57% test accuracy for Logistic regression model and 95.54% accuracy for Support Vector Classifier.
+> - GridSearch Cross Validation was also used for finding the best hyperparameters. for Logistic Regresssion.
